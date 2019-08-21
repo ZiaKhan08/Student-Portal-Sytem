@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#3F51B5</item>
+        <!-- Light Indigo -->
+        <item name="colorPrimaryDark">#3949AB</item>
+        <!-- Dark Indigo -->
+        <item name="colorAccent">#00B0FF</item>
+        <!-- Blue -->
+    </style>
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+    <style name="FullWidthEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/article_subheading</item>
+    </style>
+    <style name="MyButtonFlat" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+    </style>
+    <style name="MyButtonRaised" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+</resources>

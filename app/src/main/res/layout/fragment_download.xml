@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteView_dsubject"
+            android:layout_width="match_parent"
+            style="@style/FullWidthEditText"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Enter Subject code"
+            android:textSize="16sp" />
+
+        <include layout="@layout/divider"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteView_dcategory"
+            android:layout_width="match_parent"
+            style="@style/FullWidthEditText"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Select Category"
+            android:textSize="16sp" />
+
+        <include layout="@layout/divider"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_find_files"
+            android:text="Find Files"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:theme="@style/MyButtonRaised" />
+
+    </LinearLayout>

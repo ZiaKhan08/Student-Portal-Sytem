@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="128dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="?attr/colorPrimaryDark"
+    android:orientation="horizontal"
+    android:padding="@dimen/md_keylines"
+    android:gravity="center_vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_photo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/zia"
+        />
+
+    <TextView
+        android:id="@+id/field_username"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:textColor="@color/white"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:textSize="20dp"
+        tools:text="Zia Khan" />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/md_keylines"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            android:id="@+id/yo">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/ic_account_circle_black_48dp"
+                />
+
+            <TextView
+                android:id="@+id/author"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textSize="20sp"
+                tools:text="Zia Khan" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Message"
+            android:id="@+id/button_message"
+            android:layout_below="@+id/yo"
+            android:layout_marginTop="16dp"
+            android:theme="@style/MyButtonRaised"
+            />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/detail_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To:"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="16sp"
+                android:textAppearance="?attr/textAppearanceListItem"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/autocompleteView"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="Name of Club"
+                android:layout_marginLeft="6dp"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/divider"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/FullWidthEditText"
+            android:hint="Title"
+            android:singleLine="true"
+            android:textColorHint="@color/medium_grey"
+            android:id="@+id/field_title" />
+        <include layout="@layout/divider"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/FullWidthEditText"
+            android:hint="Body"
+            android:textColorHint="@color/medium_grey"
+            android:id="@+id/field_body" />
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/check"
+            android:layout_marginTop="16dp"
+            android:text="Check if the post is global"
+            android:layout_marginLeft="16dp"/>
+
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

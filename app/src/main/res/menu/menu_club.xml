@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PostListActivity">
+    <item
+        android:id="@+id/action_subscribe"
+        android:title="Subscribe"
+        android:icon="@drawable/ic_add_circle_outline_white_24dp"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_subscribed"
+        android:title="Subscribed"
+        android:icon="@drawable/ic_check_circle_white_24dp"
+        app:showAsAction="ifRoom"
+        android:visible="false"/>
+    <item
+        android:id="@+id/action_info"
+        android:title="Description"
+        android:icon="@drawable/ic_info_outline_white_24dp"
+        app:showAsAction="ifRoom" />
+
+</menu>

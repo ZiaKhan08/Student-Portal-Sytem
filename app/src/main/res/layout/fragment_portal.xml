@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="@dimen/md_keylines"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vote casting Launched -- What Are Your Thoughts?"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/article_subheading" />
+
+    <TextView
+        android:id="@+id/list_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_title"
+        android:textColor="@color/medium_grey"
+        android:ellipsize="end"
+        android:layout_marginTop="4dp"
+        android:text="Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body Body"
+        android:maxLines="3"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/list_body" />
+
+    <TextView
+        android:id="@+id/list_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_desc"
+        android:textColor="@color/medium_grey"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginTop="2dp"
+        android:text="2 hours ago"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/caption" />
+
+</RelativeLayout>
